@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Hoja de Vida</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <h1>Formulario de Hoja de Vida</h1>
+    <form>
+      <fieldset>
+        <legend>Datos Personales:</legend>
+        <label for="nombre">Nombre completo:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          required
+          autofocus
+        /><br/><br/>
+
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input
+          type="date"
+          id="fecha_nacimiento"
+          name="fecha_nacimiento"
+        />
+        <br/><br/>
+
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" name="cedula" /><br/><br/>
+
+        <label for="genero">Género:</label>
+        <input
+          type="radio"
+          id="genero_masculino"
+          name="genero"
+          value="Masculino"
+        />Masculino
+        <input
+          type="radio"
+          id="genero_femenino"
+          name="genero"
+          value="Femenino"
+        />Femenino
+        <input
+          type="radio"
+          id="genero_otro"
+          name="genero"
+          value="Otro"
+        />Otro
+        <br/><br/>
+
+        <label for="nacionalidad">Nacionalidad:</label>
+        <input type="text" id="nacionalidad" name="nacionalidad"/>
+        <br/><br/>
+
+        <label for="estado_civil">Estado civil:</label>
+        <select id="estado_civil" name="estado_civil">
+          <option value="Soltero">Soltero</option>
+          <option value="Casado">Casado</option>
+          <option value="Divorciado">Divorciado</option>
+          <option value="Viudo">Viudo</option>
+        </select>
+          <br/><br/>
+
+        <label for="licencia_conducir">¿Posee licencia de conducir?</label>
+        <select id="licencia_conducir" name="licencia_conducir">
+          <option value="Si">Sí</option>
+          <option value="No">No</option>
+        </select>
+          <br/><br/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferencia salarial:</legend>
+        <label for="salario_pretendido">Salario bruto pretendido:</label>
+        <input
+          type="number"
+          id="salario_pretendido"
+          name="salario_pretendido"
+          step="any"
+        />
+        <br/><br/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos de contacto:</legend>
+        <label for="telefonos">Teléfonos:</label>
+        <input type="tel" id="telefonos" name="telefonos"/>
+        <br/><br/>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"/>
+        <br/><br/>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion"/>
+        <br/><br/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Experiencias laborales:</legend>
+        <label for="experiencia_laboral">
+          Describir completamente el puesto:
+        </label>
+        <br/>
+        <textarea
+          id="experiencia_laboral"
+          name="experiencia_laboral"
+          rows="4"
+          cols="50">
+        </textarea>
+        <br/><br/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Educación:</legend>
+        <label for="primaria">Primaria:</label>
+        <input type="text" id="primaria" name="primaria"/>
+        <br/><br/>
+
+        <label for="secundaria">Secundaria:</label>
+        <input type="text" id="secundaria" name="secundaria"/>
+        <br/><br/>
+
+        <label for="universitaria">Universitaria:</label>
+        <input
+          type="text"
+          id="universitaria"
+          name="universitaria"
+        />
+        <br/><br/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Idiomas:</legend>
+        <label for="idiomas">Selecciona los idiomas que hablas:</label><br/>
+        <label for="español_checkbox">
+          <input type="checkbox" id="español_checkbox" name="idiomas[]" value="español">
+          Español
+        </label><br>
+      
+        <label for="ingles_checkbox">
+          <input type="checkbox" id="ingles_checkbox" name="idiomas[]" value="ingles">
+          Inglés
+        </label><br>
+      
+        <label for="frances_checkbox">
+          <input type="checkbox" id="frances_checkbox" name="idiomas[]" value="frances">
+          Francés
+        </label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informática:</legend>
+        <label for="lenguajes_informatica">
+          Selecciona los lenguajes relacionados a desarrollo web:
+        </label><br/>
+        
+        <label for="html_css_checkbox">
+          <input type="checkbox" id="html_css_checkbox" name="lenguajes_informatica[]" value="HTML/CSS">
+          HTML/CSS
+        </label><br>
+      
+        <label for="javascript_checkbox">
+          <input type="checkbox" id="javascript_checkbox" name="lenguajes_informatica[]" value="JavaScript">
+          JavaScript
+        </label><br>
+      
+        <label for="php_checkbox">
+          <input type="checkbox" id="php_checkbox" name="lenguajes_informatica[]" value="PHP">
+          PHP
+        </label><br>
+      
+      </fieldset>
+      
+      <fieldset>
+        <legend>Referencias:</legend>
+        <label for="referencias">Lista de referencias personales:</label><br/>
+        <textarea
+          id="referencias"
+          name="referencias"
+          rows="4"
+          cols="50">
+        </textarea>
+        <br/><br/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Cargar una hoja de vida:</legend>
+        <input type="file" id="hoja_vida" name="hoja_vida"/>
+        <br/><br/>
+      </fieldset>
+      
+      <input type="submit" value="Enviar"/>
+
+    </form>
+  </body>
+</html>

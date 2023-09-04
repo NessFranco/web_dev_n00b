@@ -1,0 +1,76 @@
+
+body{
+    background-color: #0C3D59;
+    color: #B2E1B9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+fieldset{
+    margin: 2em 0;
+    padding: 1em 2 em;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    min-width: 400px;
+}
+
+legend{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25em;
+    padding: 0.25em;
+    color: #B2E1B9;
+}
+
+label{
+    display: block;
+    margin-top: 1em;
+}
+
+label:first-of-type{
+    margin-top: 0;
+}
+
+input{
+    padding: .5em;
+    border: solid 1px #B2E1B9;
+}
+
+textarea{
+    min-height: 8em;
+    min-width: 95%;
+    padding: .5em;
+    border: solid 1px #B2E1B9;
+}
+
+input[type="text"]{
+    width: 15em;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+input[type="submit"] {
+    padding: 1em 2em;
+    border-radius: 6px;
+    background-color: #66C256;
+    color: #eff0f3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    align-self: center;
+}
